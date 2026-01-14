@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Digital Playground | インタラクティブLP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-CD77UtIL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-hOMmXlKL.css">
+  </head>
+  <body>
+    <!-- 物理演算キャンバス (背景/インタラクション層) -->
+    <div id="physics-container"></div>
+
+    <!-- スクロールコンテンツ (前面層) -->
+    <main class="scroll-content">
+      
+      <!-- Section 1: Hero (Gravity) -->
+      <section class="section" id="section-hero">
+        <div class="content-wrapper">
+          <h1 class="hero-title">
+            <span class="instruction">マウスで触ってください</span>
+          </h1>
+          <p class="hero-subtitle">Webは、もっと自由になれる。</p>
+        </div>
+      </section>
+
+      <!-- Section 2: Concepts (Anti-Gravity) -->
+      <section class="section" id="section-concept">
+        <div class="content-wrapper text-right">
+          <h2>Code is <br><span class="highlight">Alive</span>.</h2>
+          <p>静的な情報はもう終わり。<br>動き、反応し、変化するサイトへ。</p>
+        </div>
+      </section>
+
+      <!-- Section 3: Tech Stack (Springs/Joints) -->
+      <section class="section" id="section-tech">
+        <div class="content-wrapper text-center">
+          <h2>Tech Stack</h2>
+          <p>最新技術をつなぎ合わせる</p>
+          <div class="tech-placeholder"></div> 
+          <!-- Tech icons will be spawned by JS as physics objects -->
+        </div>
+      </section>
+
+      <!-- Section 4: Contact (Black Hole) -->
+      <section class="section" id="section-contact">
+        <div class="content-wrapper text-center">
+          <h2>Contact</h2>
+          <p>アイデアの深淵へ。<br>クリックしてブラックホールを生成。</p>
+          <button id="blackhole-btn">GENERATE SINGULARITY</button>
+        </div>
+      </section>
+
+    </main>
+    
+    <!-- UI Overlay (Fixed elements) -->
+    <div class="ui-overlay">
+      <div class="logo">Playground.</div>
+      <div class="scroll-indicator">SCROLL</div>
+    </div>
+
+  </body>
+</html>
